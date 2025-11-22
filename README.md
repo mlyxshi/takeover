@@ -1,5 +1,15 @@
 ## takeover
 
+### build rootfs
+```
+wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/create-rootfs.sh
+bash create-rootfs.sh
+```
+
+```
+scp root@IP:/tmp/alpine-takeover-rootfs.tar.gz .
+```
+
 
 ### non-interactive
 ```
