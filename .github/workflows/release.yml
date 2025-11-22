@@ -28,9 +28,9 @@ jobs:
         echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpaY3LyCW4HHqbp4SA4tnA+1Bkgwrtro2s/DEsBcPDe" > /tmp/takeover-rootfs/root/.ssh/authorized_keys
         chmod 600 /tmp/takeover-rootfs/root/.ssh/authorized_keys
 
-        cp ${GITHUB_WORKSPACE}/pre-build/{busybox,fakeinit} /tmp/takeover-rootfs/
+        echo "nameserver 1.1.1.1" > /tmp/takeover-rootfs/etc/resolv.conf
 
-        chroot . apk add openssh-server
+        cp ${GITHUB_WORKSPACE}/pre-build/{busybox,fakeinit} /tmp/takeover-rootfs/
 
         cd /tmp/takeover-rootfs
         tar -czf /tmp/alpine-takeover-rootfs.tar.gz .
