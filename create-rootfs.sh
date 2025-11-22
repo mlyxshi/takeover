@@ -21,6 +21,8 @@ echo "nameserver 1.1.1.1" > ./etc/resolv.conf
 
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit
+wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/takeover.sh
+wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/takeover-non-interactive.sh
 
 chmod +x ./busybox ./fakeinit
 
