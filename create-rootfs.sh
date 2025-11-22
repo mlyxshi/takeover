@@ -22,7 +22,7 @@ echo "nameserver 1.1.1.1" > ./etc/resolv.conf
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit
 
-chmod +x ./busybox
+chmod +x ./busybox ./fakeinit
 
 chroot . apk add openssh
 
