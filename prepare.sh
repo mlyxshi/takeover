@@ -14,4 +14,3 @@ chmod 600 /takeover/root/.ssh/authorized_keys
 cd /takeover
 rm takeover.sh
 wget https://raw.githubusercontent.com/mlyxshi/takeover/refs/heads/main/takeover.sh
-sh takeover.sh
