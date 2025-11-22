@@ -14,4 +14,4 @@ jobs:
 
     - run: |
         bash create-rootfs.sh
-        gh release upload x86_64 /tmp/takeover-rootfs/alpine-takeover-rootfs.tar.gz --clobber
+        gh release upload x86_64 /tmp/alpine-takeover-rootfs.tar.gz --clobber

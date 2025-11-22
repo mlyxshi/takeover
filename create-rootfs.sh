@@ -18,8 +18,6 @@ chmod 700 /tmp/takeover-rootfs/root/.ssh
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpaY3LyCW4HHqbp4SA4tnA+1Bkgwrtro2s/DEsBcPDe" > /tmp/takeover-rootfs/root/.ssh/authorized_keys
 chmod 600 /tmp/takeover-rootfs/root/.ssh/authorized_keys
 
-cd /tmp/takeover-rootfs/
-wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
-wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit 
+cp ./pre-build/{busybox,fakeint} /tmp/takeover-rootfs/
 
-tar -czvf alpine-takeover-rootfs.tar.gz .
+tar -czvf /tmp/alpine-takeover-rootfs.tar.gz /tmp/takeover-rootfs/
