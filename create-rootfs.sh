@@ -19,6 +19,7 @@ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpaY3LyCW4HHqbp4SA4tnA+1Bkgwrtro2s/DE
 chmod 600 /tmp/takeover-rootfs/root/.ssh/authorized_keys
 
 cd /tmp/takeover-rootfs/
-wget 
+wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
+wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit 
 
 tar -czvf alpine-takeover-rootfs .
