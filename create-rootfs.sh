@@ -22,4 +22,4 @@ cd /tmp/takeover-rootfs/
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit 
 
-tar -czvf alpine-takeover-rootfs .
+tar -czvf alpine-takeover-rootfs.tar.gz .
