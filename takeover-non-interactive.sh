@@ -7,8 +7,6 @@ PORT=80
 
 cd "$TO"
 
-echo "[INFO] Starting non-interactive takeover..."
-
 if [ ! -e fakeinit ]; then
     ./busybox echo "Please compile fakeinit.c first" 
     exit 1
