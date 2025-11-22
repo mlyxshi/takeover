@@ -28,7 +28,7 @@ jobs:
         echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpaY3LyCW4HHqbp4SA4tnA+1Bkgwrtro2s/DEsBcPDe" > /tmp/takeover-rootfs/root/.ssh/authorized_keys
         chmod 600 /tmp/takeover-rootfs/root/.ssh/authorized_keys
 
-        cp ${GITHUB_WORKSPACE}/pre-build/{busybox,fakeint} /tmp/takeover-rootfs/
+        cp ${GITHUB_WORKSPACE}/pre-build/{busybox,fakeinit} /tmp/takeover-rootfs/
 
         tar -czf /tmp/alpine-takeover-rootfs.tar.gz /tmp/takeover-rootfs/
     
