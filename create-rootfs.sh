@@ -11,7 +11,7 @@ echo "Download URL: $DOWNLOAD_URL"
 wget "$DOWNLOAD_URL" -O /tmp/alpine-minirootfs.tar.gz
 mkdir -p /tmp/takeover-rootfs
 
-tar -xvf alpine-minirootfs.tar.gz -C /tmp/takeover-rootfs
+tar -xvf /tmp/alpine-minirootfs.tar.gz -C /tmp/takeover-rootfs
 
 mkdir -p /tmp/takeover-rootfs/root/.ssh
 chmod 700 /tmp/takeover-rootfs/root/.ssh
