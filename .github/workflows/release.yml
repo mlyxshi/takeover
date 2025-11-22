@@ -30,7 +30,9 @@ jobs:
 
         cp ${GITHUB_WORKSPACE}/pre-build/{busybox,fakeinit} /tmp/takeover-rootfs/
 
+        chroot . apk add openssh-server
+
         cd /tmp/takeover-rootfs
         tar -czf /tmp/alpine-takeover-rootfs.tar.gz .
     
-    - run: gh release upload x86_64 /tmp/alpine-takeover-rootfs.tar.gz
+    - run: gh release upload x86_64 /tmp/alpine-takeover-rootfs.tar.gz --clobber
