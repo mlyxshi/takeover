@@ -26,6 +26,6 @@ wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/takeover-non-intera
 
 chmod +x ./busybox ./fakeinit
 
-chroot . apk add openssh
+chroot . apk add openssh curl
 
 tar -czf /tmp/alpine-takeover-rootfs.tar.gz .
