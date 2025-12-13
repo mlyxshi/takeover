@@ -2,6 +2,7 @@
 https://github.com/marcan/takeover.sh
 
 ### build rootfs
+x86_64 root
 ```
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/create-rootfs.sh
 bash create-rootfs.sh
