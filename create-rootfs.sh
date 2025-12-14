@@ -18,6 +18,7 @@ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpaY3LyCW4HHqbp4SA4tnA+1Bkgwrtro2s/DE
 chmod 600 ./root/.ssh/authorized_keys
 
 echo "nameserver 1.1.1.1" > ./etc/resolv.conf
+echo "nameserver 2606:4700:4700::1111" >> ./etc/resolv.conf
 
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/busybox
 wget https://github.com/mlyxshi/takeover/raw/refs/heads/main/pre-build/fakeinit
